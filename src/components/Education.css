@@ -1,0 +1,180 @@
+.education {
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-green), var(--accent-cyan), transparent);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -40px;
+    top: 24px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marker-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    box-shadow: 0 0 12px var(--accent-green), 0 0 24px var(--accent-green-glow);
+    border: 2px solid var(--bg-primary);
+}
+
+.timeline-card {
+    margin-left: 0;
+}
+
+.timeline-date {
+    margin-bottom: 12px;
+}
+
+.date-badge {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--accent-green);
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 4px;
+    background: var(--accent-green-dim);
+}
+
+.timeline-title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.timeline-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.timeline-details {
+    display: flex;
+    gap: 24px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.detail-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.detail-value {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+}
+
+.timeline-location {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+    font-style: italic;
+}
+
+.marker-dot-cyan {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 12px var(--accent-cyan), 0 0 24px var(--accent-cyan-glow);
+}
+
+.date-badge.cyan {
+    color: var(--accent-cyan);
+    border-color: rgba(0, 212, 255, 0.2);
+    background: var(--accent-cyan-dim);
+}
+
+/* Extra Curricular */
+.extra-section {
+    margin-top: 60px;
+}
+
+.extra-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.extra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.extra-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+}
+
+.extra-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+
+.extra-info h4 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-white);
+    margin-bottom: 2px;
+}
+
+.extra-info p {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-line {
+        left: 8px;
+    }
+
+    .timeline-marker {
+        left: -30px;
+    }
+
+    .extra-grid {
+        grid-template-columns: 1fr;
+    }
+}

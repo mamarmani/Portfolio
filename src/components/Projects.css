@@ -1,0 +1,124 @@
+.projects {
+    position: relative;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card.featured {
+    border-color: rgba(0, 255, 136, 0.2);
+}
+
+.project-card.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan));
+}
+
+.project-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.project-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.classification {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--accent-cyan);
+    letter-spacing: 2px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border-cyan);
+    background: var(--accent-cyan-dim);
+}
+
+.classification.top-secret {
+    color: var(--accent-green);
+    border-color: rgba(0, 255, 136, 0.2);
+    background: var(--accent-green-dim);
+}
+
+.project-id {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-dim);
+}
+
+.featured-badge {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: #ffd700;
+    letter-spacing: 1px;
+}
+
+.project-title {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-white);
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.project-date {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.project-desc {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.project-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.highlight {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--accent-green);
+    letter-spacing: 0.5px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+@media (max-width: 768px) {
+    .project-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
