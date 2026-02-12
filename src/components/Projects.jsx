@@ -2,6 +2,18 @@ import './Projects.css'
 
 const projects = [
     {
+        id: 4,
+        classification: 'PUBLIC ACCESS',
+        title: 'AI Character Name Generator',
+        date: 'February 2026',
+        description:
+            'An intelligent tool powered by AI to generate unique, context-aware character names for writers, gamers, and creators. The application provides instant results with a seamless user experience, deployed on a robust global edge network for high availability.',
+        tags: ['React', 'AI Integration', 'Generative Tech', 'Netlify', 'Web App'],
+        highlights: ['AI-Powered Generation', 'Instant Results', 'Creativity Support', 'Global Deployment'],
+        link: 'https://ai-character-name-generator.netlify.app/',
+        featured: true,
+    },
+    {
         id: 1,
         classification: 'TOP SECRET',
         title: 'Secure Image Transmission using Cryptography',
@@ -79,6 +91,12 @@ export default function Projects() {
                                     <span className="tag" key={j}>{tag}</span>
                                 ))}
                             </div>
+
+                            {project.link && (
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                                    [ ACCESS SYSTEM ]
+                                </a>
+                            )}
                         </div>
                     ))}
                 </div>
