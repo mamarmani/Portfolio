@@ -49,7 +49,7 @@ export default function Navbar() {
                     ))}
                     <li>
                         <a
-                            href="/daf.pdf"
+                            href="https://drive.google.com/uc?export=download&id=1p_XU5AzFAyOVb-T7_zTXXyETCmUXI0Bj"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-primary nav-cta"
