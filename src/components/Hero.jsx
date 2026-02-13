@@ -86,7 +86,7 @@ export default function Hero() {
                         <button className="btn btn-primary" onClick={() => scrollTo('projects')}>
                             <span>◈</span> View Projects
                         </button>
-                        <a href="https://github.com/mamarmani/Portfolio/blob/2f739347cc3efca4f7b1e329476fdfaea68a263d/public/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                        <a href="/resume.pdf" download="Amar_Mani_Mishra_Resume.pdf" className="btn btn-secondary">
                             <span>↓</span> Download Resume
                         </a>
                         <button className="btn btn-ghost" onClick={() => scrollTo('contact')}>
