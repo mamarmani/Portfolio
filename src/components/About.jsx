@@ -16,7 +16,7 @@ export default function About() {
                     <div className="profile-photo-wrapper">
                         <div className="photo-frame">
                             <div className="photo-border" />
-                            <img src="https://raw.githubusercontent.com/mamarmani/Portfolio/refs/heads/main/public/mypic.png" alt="Amar Mani Mishra" className="profile-photo" />
+                            <img src="https://raw.githubusercontent.com/mamarmani/Portfolio/2f739347cc3efca4f7b1e329476fdfaea68a263d/public/amar.jpeg" alt="Amar Mani Mishra" className="profile-photo" />
                             <div className="photo-scanline" />
                         </div>
                         <div className="photo-label">
